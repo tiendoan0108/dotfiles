@@ -25,7 +25,7 @@ primary_info = "command"
 compact_subtitle = "working_directory"
 
 [appearance.window]
-zoom_level = 90
+zoom_level = 100
 
 [text_editing]
 vim_mode_enabled = true
