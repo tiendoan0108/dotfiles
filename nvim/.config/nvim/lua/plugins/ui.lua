@@ -9,19 +9,6 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     lazy = false,
-    opts = {
-      filesystem = {
-        filtered_items = {
-          visible = true,
-          hide_dotfiles = false,
-          hide_gitignored = false,
-        },
-      },
-
-      source = {
-        git_status = true,
-      },
-    },
 
     init = function()
       vim.g.loaded_netrw = 1
@@ -32,7 +19,6 @@ return {
       require("neo-tree").setup({
         source_selector = {
           winbar = true,
-          statusline = true,
           sources = {
             { source = "filesystem", display_name = "Files" },
             { source = "git_status", display_name = "Git" },
@@ -50,11 +36,23 @@ return {
       vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Toggle Neo-tree", silent = true })
     end,
   },
-  -- Disable dashboard and explorer
+  -- Enable dashboard (no header), disable explorer
   {
     "folke/snacks.nvim",
     opts = {
-      dashboard = { enabled = false },
+      dashboard = {
+        enabled = true,
+        preset = {
+          header = [[
+  ██╗    ██╗██╗  
+ ██╔╝   ██╔╝╚██╗ 
+██╔╝   ██╔╝  ╚██╗
+╚██╗  ██╔╝   ██╔╝
+ ╚██╗██╔╝   ██╔╝ 
+  ╚═╝╚═╝    ╚═╝  
+        ]],
+        },
+      },
       explorer = { enabled = false },
     },
     keys = {
@@ -72,6 +70,13 @@ return {
         sidebars = "transparent",
         floats = "transparent",
       },
+    },
+  },
+
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "tokyonight-moon",
     },
   },
 }
