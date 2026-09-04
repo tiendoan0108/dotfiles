@@ -6,8 +6,17 @@ require("lazyload").on_vim_enter(function()
 
   -- Telescope.nvim
 
+  require('telescope').setup({
+    pickers = {
+      find_files = {
+        hidden = true
+      }
+    }
+  })
+
   local builtin = require('telescope.builtin')
   require('which-key').add({{ "<leader>f", group = "Telescope" }})
+  
   vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Find files' })
   vim.keymap.set('n', '<leader>fw', builtin.live_grep, { desc = 'Live grep' })
   vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Find buffers' })
