@@ -26,6 +26,22 @@ require('lazyload').on_vim_enter(function()
       end
     end,
   })
+
+  -- setup nvim treesitter for ensure installed
+  require("nvim-treesitter").setup({
+    ensure_installed = {
+      "lua",
+      "javascript",
+      "typescript",
+      "tsx",
+      "json",
+      "html",
+      "css",
+    },
+    highlight = {
+      enable = true,
+    },
+  })
 end)
 
 vim.lsp.config('lua_ls', {
