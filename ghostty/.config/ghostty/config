@@ -1,12 +1,12 @@
 # Font
-font-family = "JetBrainsMono Nerd Font"
+font-family = "CaskaydiaCove Nerd Font"
 adjust-cell-height = 10%
-font-size = 13 
-freetype-load-flags = no-hinting
+font-size = 14 
 
 # Background
 window-padding-x = 8
 background-blur = true
+background-opacity = 0.95
 
 # Theme
 theme = Catppuccin Macchiato 
