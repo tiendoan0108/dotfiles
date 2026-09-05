@@ -27,6 +27,20 @@ return {
             exclude = { "node_modules/", ".git/", "dist/" },
           },
         },
+        win = {
+          input = {
+            keys = {
+              ["<C-h>"] = { "toggle_hidden", mode = { "i", "n" } },
+              ["<C-i>"] = { "toggle_ignored", mode = { "i", "n" } },
+            },
+          },
+          list = {
+            keys = {
+              ["<C-h>"] = "toggle_hidden",
+              ["<C-i>"] = "toggle_ignored",
+            },
+          },
+        },
       },
     },
   },
