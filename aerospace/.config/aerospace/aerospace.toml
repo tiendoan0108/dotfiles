@@ -8,10 +8,14 @@ config-version = 2
 
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+# borders reads its options from ~/.config/borders/bordersrc, which it only
+# consults when started without arguments.
+after-startup-command = [
+  'exec-and-forget borders active_color=0xff48cae4 width=6.0 style=round hidpi=on'
+]
 
 # Start AeroSpace at login
-start-at-login = true
+start-at-login = false
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -66,12 +70,12 @@ persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 8
-    inner.vertical =   8
-    outer.left =       8
+    inner.horizontal = 12
+    inner.vertical =   12
+    outer.left =       12
     outer.bottom =     8
     outer.top =        8
-    outer.right =      8
+    outer.right =      12
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes

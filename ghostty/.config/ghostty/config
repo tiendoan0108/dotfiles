@@ -14,3 +14,4 @@ theme = TokyoNight Storm
 command = zsh
 
 macos-option-as-alt = true
+macos-window-shadow = false
