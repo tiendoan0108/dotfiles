@@ -5,8 +5,6 @@ font-size = 13
 
 # Background
 window-padding-x = 8
-background-blur = true
-background-opacity = 0.95
 
 # Theme
 theme = Catppuccin Macchiato 
