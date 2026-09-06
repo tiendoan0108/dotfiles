@@ -23,17 +23,15 @@ return {
           explorer = {
             hidden = true, -- hiện file ẩn (dotfiles)
             ignored = true, -- hiện cả file trong .gitignore
-            exclude = { ".DS_Store" },
+            exclude = { ".git", ".DS_Store" },
           },
           files = {
             hidden = true, -- hiện file ẩn (dotfiles)
-            include = { ".env" },
-            exclude = { ".DS_Store" },
+            exclude = { "node_modules", "dist", ".git", ".DS_Store" },
           },
           grep = {
             hidden = true, -- hiện file ẩn (dotfiles)
             exclude = { "node_modules", "dist", ".git", ".DS_Store" },
-            include = { ".env" },
           },
         },
         win = {
@@ -50,5 +48,20 @@ return {
         },
       },
     },
+  },
+  {
+    "folke/snacks.nvim",
+    opts = function(_, opts)
+      local ok, devicons = pcall(require, "nvim-web-devicons")
+      local diff_icon = (ok and devicons.get_icon_by_filetype("diff", { default = true })) or ""
+
+      table.insert(opts.dashboard.preset.keys, 5, {
+        icon = diff_icon .. " ",
+        key = "d",
+        desc = "Git changes",
+        action = ":CodeDiff",
+      })
+      return opts
+    end,
   },
 }
