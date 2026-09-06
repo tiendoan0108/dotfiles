@@ -14,15 +14,19 @@ return {
   -- },
   {
     "catppuccin/nvim",
-    config = function()
-      require("catppuccin").setup({
-        transparent_background = true, -- xóa nền cho Normal/NormalNC (toàn bộ editor)
-        float = {
-          transparent = true, -- floating window (Lazy, Mason, LspInfo...) cũng trong suốt
-          solid = true, -- border của float dùng màu solid thay vì cũng trong suốt luôn (tránh rối mắt)
-        },
-      })
-    end,
+    lazy = false,
+    priority = 1000,
+    opts = {
+      flavour = "macchiato",
+      -- transparent_background = true,
+      -- float = {
+      --   transparent = true,
+      --   solid = true,
+      -- },
+      integrations = {
+        neotree = true, -- quan trọng: bật integration cho neo-tree
+      },
+    },
   },
   {
     "LazyVim/LazyVim",
