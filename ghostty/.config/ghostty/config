@@ -6,11 +6,9 @@ font-size = 13
 # Background
 window-padding-x = 8
 background-blur = true
-background-opacity = 0.9
 
 # Theme
-theme = TokyoNight Storm
-
+theme = Catppuccin Macchiato
 command = zsh
 
 macos-option-as-alt = true

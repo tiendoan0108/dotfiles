@@ -1,7 +1,6 @@
 return {
   {
     "folke/snacks.nvim",
-    ---@type snacks.Config
     opts = {
       dashboard = {
         enabled = true,
@@ -24,20 +23,28 @@ return {
           explorer = {
             hidden = true, -- hiện file ẩn (dotfiles)
             ignored = true, -- hiện cả file trong .gitignore
-            exclude = { "node_modules/", ".git/", "dist/" },
+            exclude = { ".DS_Store" },
+          },
+          files = {
+            hidden = true, -- hiện file ẩn (dotfiles)
+            include = { ".env" },
+            exclude = { ".DS_Store" },
+          },
+          grep = {
+            hidden = true, -- hiện file ẩn (dotfiles)
+            exclude = { "node_modules", "dist", ".git", ".DS_Store" },
+            include = { ".env" },
           },
         },
         win = {
           input = {
             keys = {
               ["<C-h>"] = { "toggle_hidden", mode = { "i", "n" } },
-              ["<C-i>"] = { "toggle_ignored", mode = { "i", "n" } },
             },
           },
           list = {
             keys = {
               ["<C-h>"] = "toggle_hidden",
-              ["<C-i>"] = "toggle_ignored",
             },
           },
         },
