@@ -16,17 +16,20 @@ return {
     "catppuccin/nvim",
     lazy = false,
     priority = 1000,
-    opts = {
-      flavour = "macchiato",
-      -- transparent_background = true,
-      -- float = {
-      --   transparent = true,
-      --   solid = true,
-      -- },
-      integrations = {
-        neotree = true, -- quan trọng: bật integration cho neo-tree
-      },
-    },
+    config = function()
+      require("catppuccin").setup({
+        transparent_background = true,
+        float = {
+          transparent = true,
+          solid = true,
+        },
+        integrations = {
+          snacks = {
+            enabled = true,
+          },
+        },
+      })
+    end,
   },
   {
     "LazyVim/LazyVim",
