@@ -6,3 +6,7 @@ vim.o.spell = false
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+vim.diagnostic.config({
+  virtual_text = true, -- true để bật, false để tắt
+})
