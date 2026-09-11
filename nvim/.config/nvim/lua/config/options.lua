@@ -7,6 +7,13 @@ vim.o.spell = false
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.diagnostic.config({
-  virtual_text = true, -- true để bật, false để tắt
+-- 1. Tắt tự động format trên toàn hệ thống mặc định
+vim.g.autoformat = false
+
+-- 2. Chỉ kích hoạt lại autoformat riêng cho các file Lua
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "lua",
+  callback = function()
+    vim.b.autoformat = true
+  end,
 })
