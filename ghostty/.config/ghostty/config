@@ -1,8 +1,7 @@
 # Font
-font-family = "JetBrainsMono NF SemiBold"
-adjust-cell-height = 12%
+font-family = "JetBrainsMono Nerd Font Mono"
+adjust-cell-height = 10%
 font-size = 13
-freetype-load-flags = hinting,autohint,light
 
 # Background
 window-padding-x = 8
