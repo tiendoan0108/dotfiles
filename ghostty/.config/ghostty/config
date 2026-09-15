@@ -1,6 +1,5 @@
 # Font
-font-family = "ZedMono NFM Extd"
-adjust-cell-height = 10%
+font-family = "ZedMono NFM"
 font-size = 13
 
 # Background
