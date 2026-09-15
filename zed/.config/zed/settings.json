@@ -1,4 +1,4 @@
-// Zed settins
+// Zed settings
 //
 // For information on how to configure Zed, see the Zed
 // documentation: https://zed.dev/docs/configuring-zed
@@ -17,13 +17,11 @@
   },
   "agent_servers": {
     "claude-acp": {
-      "type": "registry"
+      "type": "registry",
     },
     "opencode": {
       "favorite_config_option_values": {
-        "effort": [
-          "medium"
-        ]
+        "effort": ["medium"],
       },
       "type": "registry",
       "default_mode": "plan",
@@ -34,7 +32,8 @@
 
   // Agent AI Setup
   "agent": {
-    "dock": "left",
+    "sidebar_side": "right",
+    "dock": "right",
     "default_profile": "write",
     "default_model": {
       "effort": "medium",
@@ -47,82 +46,30 @@
   },
 
   // SSH setup
-  "ssh_connections": [
-    {
-      "host": "banner-test",
-      "args": [],
-      "projects": [
-        {
-          "paths": ["/var"],
-        },
-        {
-          "paths": ["/var/www/html"],
-        },
-      ],
-    },
-    {
-      "host": "banner-prod",
-      "args": [],
-      "projects": [
-        {
-          "paths": ["/var/www/html"],
-        },
-      ],
-    },
-    {
-      "host": "support-tool-prod",
-      "args": [],
-      "projects": [
-        {
-          "paths": ["/var/www/html/updateBannerPopupRepo.sh"],
-        },
-      ],
-    },
-    {
-      "host": "banner-public-prod",
-      "args": [],
-      "projects": [
-        {
-          "paths": ["/var/www/html"],
-        },
-        {
-          "paths": ["/var/www/html/banner-public-api"],
-        },
-      ],
-    },
-  ],
+  "ssh_connections": [],
 
   // UI Configuration
   "git_panel": {
-    "sort_by_path": true,
-    "dock": "right",
+    "dock": "left",
     "tree_view": true,
   },
 
   "outline_panel": {
-    "dock": "right",
+    "dock": "left",
   },
 
   "collaboration_panel": {
-    "dock": "right",
+    "dock": "left",
   },
 
   "project_panel": {
-    "dock": "right",
+    "dock": "left",
     "indent_size": 14,
     "entry_spacing": "standard",
   },
 
-  "icon_theme": {
-    "mode": "dark",
-    "light": "Material Icon Theme",
-    "dark": "Material Icon Theme",
-  },
-  "theme": {
-    "mode": "dark",
-    "light": "Catppuccin Latte - No Italics",
-    "dark": "Catppuccin Frappé - No Italics",
-  },
+  "icon_theme": "Material Icon Theme",
+  "theme": "One Dark",
 
   "tabs": {
     "git_status": true,
@@ -134,7 +81,7 @@
   "git": {
     "inline_blame": {
       "show_commit_summary": true,
-    }
+    },
   },
 
   "indent_guides": {
@@ -148,29 +95,26 @@
     },
   },
 
-  "ui_font_size": 13,
+  "ui_font_size": 14,
   "ui_font_family": "JetBrainsMono Nerd Font",
 
   // Buffer config
   "buffer_font_size": 13,
   "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_weight": 400,
-  "buffer_line_height": {
-    "custom": 1.4
-  },
-  "buffer_font_features": {
-    "calt": false,
-  },
+  "buffer_line_height": "standard",
 
   // Terminal
   "terminal": {
-    "font_size": 12,
+    "font_size": 13,
     "line_height": "standard",
-    "font_family": "JetBrainsMono Nerd Font Mono",
     "font_weight": 300,
   },
 
   "cursor_blink": false,
+
+  "minimap": {
+    "show": "auto"
+  },
 
   // Vim
   "vim_mode": true,
