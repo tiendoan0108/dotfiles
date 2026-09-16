@@ -8,7 +8,7 @@ window-padding-x = 8
 background-blur = true
 
 # Theme
-theme = Catppuccin Macchiato
+theme = Catppuccin Frappe
 command = zsh
 
 macos-option-as-alt = true
