@@ -96,12 +96,12 @@
   },
 
   "ui_font_size": 14,
-  "ui_font_family": "JetBrainsMono Nerd Font",
 
   // Buffer config
   "buffer_font_size": 13,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_line_height": "standard",
+  "buffer_font_weight": 300,
 
   // Terminal
   "terminal": {
