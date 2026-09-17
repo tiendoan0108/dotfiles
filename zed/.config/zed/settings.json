@@ -45,13 +45,15 @@
     "model_parameters": [],
   },
 
+  "on_new_window": "launchpad",
+
   // SSH setup
   "ssh_connections": [],
 
   // UI Configuration
   "git_panel": {
     "dock": "left",
-    "tree_view": true,
+    "tree_view": false,
   },
 
   "outline_panel": {
@@ -95,12 +97,13 @@
     },
   },
 
-  "ui_font_size": 14,
+  "ui_font_size": 15,
+  "ui_font_family": ".SystemUIFont",
 
   // Buffer config
   "buffer_font_size": 13,
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
-  "buffer_line_height": "standard",
+  "buffer_line_height": "comfortable",
   "buffer_font_weight": 300,
 
   // Terminal
