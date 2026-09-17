@@ -15,7 +15,11 @@
     "mode": "eager",
     "provider": "none",
   },
+
   "agent_servers": {
+    "cursor": {
+      "type": "registry"
+    },
     "claude-acp": {
       "type": "registry",
     },
@@ -32,8 +36,6 @@
 
   // Agent AI Setup
   "agent": {
-    "sidebar_side": "right",
-    "dock": "right",
     "default_profile": "write",
     "default_model": {
       "effort": "medium",
@@ -52,20 +54,10 @@
 
   // UI Configuration
   "git_panel": {
-    "dock": "left",
     "tree_view": false,
   },
 
-  "outline_panel": {
-    "dock": "left",
-  },
-
-  "collaboration_panel": {
-    "dock": "left",
-  },
-
   "project_panel": {
-    "dock": "left",
     "indent_size": 14,
     "entry_spacing": "standard",
   },
@@ -98,13 +90,14 @@
   },
 
   "ui_font_size": 15,
-  "ui_font_family": ".SystemUIFont",
+  "ui_font_family": "ZedMono Nerd Font",
 
   // Buffer config
-  "buffer_font_size": 13,
-  "buffer_font_family": "JetBrainsMonoNL Nerd Font",
-  "buffer_line_height": "comfortable",
-  "buffer_font_weight": 300,
+  "buffer_font_size": 14,
+  "buffer_font_family": "ZedMono Nerd Font",
+  "buffer_line_height": {
+    "custom": 1.4
+  },
 
   // Terminal
   "terminal": {
@@ -126,6 +119,7 @@
     "highlight_on_yank_duration": 200,
     "use_smartcase_find": true,
     "use_regex_search": true,
+    "gdefault": true
   },
 
   // Prettier format
