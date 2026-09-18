@@ -12,4 +12,3 @@ theme = Catppuccin Frappe
 command = zsh
 
 macos-option-as-alt = true
-macos-window-shadow = false

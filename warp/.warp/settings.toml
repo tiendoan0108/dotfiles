@@ -35,6 +35,7 @@ vim_status_bar = true
 cloud_conversation_storage_enabled = true
 
 [agents.warp_agent]
+is_any_ai_enabled = false
 
 [agents.warp_agent.input]
 nld_in_terminal_enabled = false

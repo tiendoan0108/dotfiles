@@ -9,5 +9,6 @@
         "@shopify/dev-mcp@latest"
       ]
     }
-  }
+  },
+  "plugin": ["@warp-dot-dev/opencode-warp"]
 }
