@@ -1,6 +1,5 @@
 # Font
 font-family = "JetbrainsMono Nerd Font"
-adjust-cell-height = 10%
 font-size = 13
 
 # Background
@@ -12,3 +11,7 @@ theme = Catppuccin Frappe
 command = zsh
 
 macos-option-as-alt = true
+
+cursor-style = block
+
+cursor-style-blink = false
