@@ -29,6 +29,10 @@ compact_subtitle = "working_directory"
 [appearance.input]
 input_mode = "waterfall"
 
+[appearance.tabs]
+show_indicators_button = true
+workspace_decoration_visibility = "hide_fullscreen"
+
 [text_editing]
 vim_mode_enabled = true
 vim_status_bar = true
@@ -132,6 +136,15 @@ input_box_type_setting = "universal"
 
 [notifications]
 toast_duration_secs = 8
+
+[notifications.preferences]
+is_agent_task_completed_enabled = true
+is_long_running_enabled = false
+is_needs_attention_enabled = true
+is_password_prompt_enabled = true
+long_running_threshold = 30
+mode = "enabled"
+play_notification_sound = true
 
 [code]
 
