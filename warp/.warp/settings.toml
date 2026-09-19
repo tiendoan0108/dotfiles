@@ -1,8 +1,8 @@
 # Appearance settings
 [appearance.text]
 font_name = "JetbrainsMono Nerd Font Mono"
-font_size = 14.0
-notebook_font_size = 14.0
+font_size = 13.0
+notebook_font_size = 13.0
 ai_font_name = "JetbrainsMono Nerd Font Mono"
 match_ai_font = true
 line_height_ratio = 1.2000000476837158
@@ -25,6 +25,7 @@ primary_info = "command"
 compact_subtitle = "working_directory"
 
 [appearance.window]
+zoom_level = 110
 
 [appearance.input]
 input_mode = "waterfall"
