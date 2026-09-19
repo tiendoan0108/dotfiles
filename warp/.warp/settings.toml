@@ -13,7 +13,7 @@ selected_system_themes = {
   dark = { custom = { name = "Catppuccin Mocha", path = "catppuccin_mocha.yml" } },
   light = "light",
 }
-theme = { custom = { name = "Catppuccin Mocha", path = "catppuccin_mocha.yml" } }
+theme = { custom = { name = "Catppuccin Frappe", path = "catppuccin_frappe.yml" } }
 system_theme = false
 
 [appearance.vertical_tabs]
@@ -125,8 +125,8 @@ osc52_clipboard_access = "write_only"
 
 [terminal.input]
 syntax_highlighting = true
-honor_ps1 = true
-input_box_type_setting = "classic"
+honor_ps1 = false
+input_box_type_setting = "universal"
 
 [notifications]
 toast_duration_secs = 8
@@ -139,3 +139,6 @@ agent_mode_codebase_context = false
 [code.editor]
 show_code_review_button = true
 auto_open_code_review_pane_on_first_agent_change = true
+
+[general]
+snackbar_enabled = true
