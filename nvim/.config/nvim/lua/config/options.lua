@@ -7,6 +7,10 @@ vim.o.spell = false
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.o.mouse = "a"
+
+vim.o.wrap = true
+
 -- 1. Tắt tự động format trên toàn hệ thống mặc định
 vim.g.autoformat = false
 
