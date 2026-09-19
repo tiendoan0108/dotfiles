@@ -1,9 +1,9 @@
 # Appearance settings
 [appearance.text]
-font_name = "JetbrainsMonoNL Nerd Font"
-font_size = 13.0
+font_name = "JetbrainsMono Nerd Font Mono"
+font_size = 14.0
 notebook_font_size = 14.0
-ai_font_name = "JetbrainsMonoNL Nerd Font"
+ai_font_name = "JetbrainsMono Nerd Font Mono"
 match_ai_font = true
 line_height_ratio = 1.2000000476837158
 font_weight = "normal"
@@ -27,7 +27,7 @@ compact_subtitle = "working_directory"
 [appearance.window]
 
 [appearance.input]
-input_mode = "pinned_to_bottom"
+input_mode = "waterfall"
 
 [text_editing]
 vim_mode_enabled = true

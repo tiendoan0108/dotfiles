@@ -1,5 +1,5 @@
 # Font
-font-family = "JetbrainsMono Nerd Font"
+font-family = "JetbrainsMono Nerd Font Mono"
 font-size = 13
 
 # Background
@@ -12,6 +12,3 @@ command = zsh
 
 macos-option-as-alt = true
 
-cursor-style = block
-
-cursor-style-blink = false
