@@ -27,8 +27,3 @@ vim.keymap.set({ "n", "v" }, "<leader>cP", function()
 end, { desc = "Copy absolute path:line:col (or line range in V-mode)" })
 
 vim.keymap.set("i", "jk", "<ESC>", { desc = "Thoát chế độ insert bằng jk" })
-
-vim.keymap.set("n", "<leader>gH", function()
-  vim.cmd("botright 15split | terminal hunk diff --watch")
-  vim.cmd("startinsert")
-end, { desc = "Open hunk diff" })
