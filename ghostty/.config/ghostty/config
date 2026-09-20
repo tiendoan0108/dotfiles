@@ -1,6 +1,6 @@
 # Font
-font-family = "ZedMono NFM"
-font-size = 14
+font-family = "JetbrainsMono Nerd Font Mono"
+font-size = 13
 
 # Background
 window-padding-x = 8

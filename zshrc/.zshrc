@@ -65,6 +65,8 @@ eval "$(starship init zsh)"
 # Workmux
 eval "$(workmux completions zsh)"
 
+eval "$(wt config shell init zsh)"
+
 # opencode
 export PATH=/home/tiendvd/.opencode/bin:$PATH
 

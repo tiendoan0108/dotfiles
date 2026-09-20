@@ -21,14 +21,14 @@ enabled = true
 display_granularity = "panes"
 view_mode = "compact"
 tab_item_mode = "focused_session"
-primary_info = "command"
+primary_info = "working_directory"
 compact_subtitle = "working_directory"
 
 [appearance.window]
-zoom_level = 110
+zoom_level = 100
 
 [appearance.input]
-input_mode = "waterfall"
+input_mode = "pinned_to_bottom"
 
 [appearance.tabs]
 show_indicators_button = true

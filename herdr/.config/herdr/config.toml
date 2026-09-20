@@ -1,0 +1,68 @@
+# herdr configuration
+# Place this file at ~/.config/herdr/config.toml
+
+onboarding = false
+
+[theme]
+# Built-in themes: catppuccin, terminal, tokyo-night, dracula, nord,
+#                  gruvbox, one-dark, solarized, kanagawa, rose-pine,
+#                  vesper
+name = "dracula"
+auto_switch = false
+
+[keys]
+# Navigate pane tiện hơn
+focus_pane_left = ["ctrl+h", "prefix+h"]
+focus_pane_down = ["ctrl+j", "prefix+j"]
+focus_pane_up = ["ctrl+k", "prefix+k"]
+focus_pane_right = ["ctrl+l", "prefix+l"]
+
+# Navigate workspace
+navigate_workspace_down = ["j", "down"]
+navigate_workspace_up = ["k", "up"]
+
+# Worktree — cặp với new_worktree (prefix+shift+g)
+open_worktree   = "prefix+shift+o"
+remove_worktree = "prefix+ctrl+g"
+
+# Điều hướng workspace tuần tự (khác với workspace_picker = prefix+w)
+previous_workspace = "prefix+{"
+next_workspace      = "prefix+}"
+
+# Điều hướng agent tuần tự trong sidebar
+previous_agent = "prefix+,"
+next_agent     = "prefix+."
+
+# Sắp xếp lại vị trí tab, cặp với previous_tab/next_tab (p/n)
+move_tab_previous = "prefix+ctrl+p"
+move_tab_next     = "prefix+ctrl+n"
+
+# Quay lại pane vừa focus trước đó (kiểu tmux "prefix+;")
+last_pane = "prefix+;"
+
+# Resize trực tiếp không cần vào resize_mode — dùng chord an toàn ctrl+alt
+resize_pane_left  = "ctrl+alt+shift+h"
+resize_pane_down  = "ctrl+alt+shift+j"
+resize_pane_up    = "ctrl+alt+shift+k"
+resize_pane_right = "ctrl+alt+shift+l"
+
+# Nhảy thẳng tới agent theo số 1-9, không cần prefix
+[keys.indexed]
+agents     = "ctrl+alt"        # ctrl+alt+1..9 → focus agent 1..9
+workspaces = "ctrl+alt+shift"  # ctrl+alt+shift+1..9 → switch_workspace 1..9
+
+[[keys.command]]
+key = "alt+e"
+type = "popup"
+command = "hunk diff"
+width = "90%"
+height = "90%"
+
+[experimental]
+pane_history = false
+
+[ui]
+show_agent_labels_on_pane_borders = true
+
+[ui.toast]
+delivery = "terminal"
