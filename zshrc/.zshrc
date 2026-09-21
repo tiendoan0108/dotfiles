@@ -50,7 +50,6 @@ alias v="nvim"
 alias vim="nvim"
 alias kickstart-nvim="NVIM_APPNAME=kickstart-nvim nvim"
 alias lazy-nvim="NVIM_APPNAME=lazy-nvim nvim"
-alias wm="workmux"
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -61,11 +60,6 @@ alias wm="workmux"
 
 # Starship configuration
 eval "$(starship init zsh)"
-
-# Workmux
-eval "$(workmux completions zsh)"
-
-eval "$(wt config shell init zsh)"
 
 # opencode
 export PATH=/home/tiendvd/.opencode/bin:$PATH
@@ -102,3 +96,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
+
+# Added by the Hunk installer (https://hunk.dev)
+export PATH='/home/tiendvd-iart/.hunk/bin':"$PATH"
