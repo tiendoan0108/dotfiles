@@ -9,3 +9,5 @@ foo.*
 data
 zed/.config/zed/prompts
 zshrc/.zshenv
+hunk/**/state.json
+herdr/**/session.json

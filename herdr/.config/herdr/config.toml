@@ -52,7 +52,7 @@ agents     = "ctrl+alt"        # ctrl+alt+1..9 → focus agent 1..9
 workspaces = "ctrl+alt+shift"  # ctrl+alt+shift+1..9 → switch_workspace 1..9
 
 [[keys.command]]
-key = "prefix+alt+h"
+key = "alt+e"
 type = "popup"
 command = "hunk diff"
 width = "90%"
