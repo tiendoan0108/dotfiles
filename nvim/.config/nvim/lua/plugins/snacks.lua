@@ -24,6 +24,11 @@ return {
             hidden = true, -- hiện file ẩn (dotfiles)
             ignored = true, -- hiện cả file trong .gitignore
             exclude = { ".git", ".DS_Store" },
+            layout = {
+              layout = {
+                position = "right",
+              },
+            },
           },
           files = {
             hidden = true, -- hiện file ẩn (dotfiles)
